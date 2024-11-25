@@ -1,0 +1,479 @@
+@font-face {
+    font-family: nue;
+    src: url(./utilities/64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman.ttf);
+}
+
+@font-face {
+    font-family: nue2;
+    src: url(./utilities/64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nue;
+    background-color: #EFEAE3;
+}
+
+.wrapper {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.color-options {                    
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.color-options #color {
+    width: 1.5vw;
+    height: 1.5vw;
+    border: none;
+}
+
+.color-options .orange {
+    background-color: #F6911E;
+}
+
+.color-options .blue {
+    background-color: #06A4C1;
+}
+
+.color-options .green {
+    background-color: #155D4F;
+}
+
+.color-options .red {
+    background-color: #CB454E;
+}
+
+.resume{
+    width: 50vw;
+    display: flex;
+    min-height: 140vh;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left-content {
+    width: 37%;
+    height: 100%;
+    background-color: #F6911E;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+    color: white;
+}
+
+.left-content::after {
+    content: "";
+    background-color: #404040;
+    height: 9vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.profile-section {
+    width: 75%;
+    min-height: 18vw;
+    z-index: 99;
+    position: relative;
+    font-weight: 100;
+    font-size: 2vh; 
+}
+
+.profile-section .profile-image {
+    width: 14vw;
+    height: 14vw;
+    background-color: #F6911E;
+    background-image: url(./utilities/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+} 
+
+.profile-section .profile-contacts {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    padding-top: 3vw;
+}
+
+.profile-section .profile-contacts .address {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    height: 2vw;
+}
+
+.profile-section .profile-contacts .phone {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    height: 2vw;
+}
+
+.profile-section .profile-contacts .mail {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    height: 2vw;
+}
+
+.profile-section .profile-contacts .github {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    height: 2vw;
+}
+
+.profile-section .profile-contacts .linkedin {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    height: 2vw;
+}
+
+.summary-section {
+    width: 75%;
+    min-height: 12vw;
+    z-index: 99;
+    position: relative;
+    margin-top: 1.5vw;
+    border-top: 1px solid white;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: 1px;
+}
+
+.summary-section h1 {
+    font-family: nue2;
+    text-transform: uppercase;
+}
+
+.summary-section p {
+    margin-top: -0.4vw;
+}
+
+.skills-section {
+    width: 75%;
+    min-height: 20vw;
+    z-index: 99;
+    position: relative;
+    margin-top: 1.5vw;
+    border-top: 1px solid white;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2vh;
+}
+
+.skills-section h1 {
+    text-transform: uppercase;
+    font-family: nue2;
+}
+
+.skills-section ul {
+    margin-left: -1.3vw;
+    margin-top: -0.4vw;
+}
+
+.right-content {
+    width: 63%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content-container {
+    height: 100%;
+    width: 86%;
+    padding-top: 1.5vw;
+    position: relative;
+}
+
+.right-content-container h1 {
+    font-size: 3vw;
+    font-family: nue2;
+    color: #F6911E;
+}
+
+.experience-section {
+    width: 100%;
+    min-height: 15vw;
+    border: none;
+    border-top: 2px solid #F6911E;
+    position: absolute;
+    padding: 0;
+}
+
+.experience-section fieldset {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    min-height: 13vw;
+}
+
+.experience-section h1 {
+    font-size: 2.5vh;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #F6911E;
+}
+
+.experience-section .job-experience {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.experience-section .job-details {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5vh;
+    height: 1.5vw;
+    letter-spacing: 1px;
+    color: #6b6b6b;
+}
+
+.job-details .role .company {
+    font-family: nue2;
+    font-weight: 100;
+}
+
+.second-experience {
+    padding-top: 3vw;
+}
+
+.education-section {
+    margin-top: 2vw;
+    border-top: 2px solid #F6911E;
+}
+
+.education-section h1 {
+    font-size: 2.5vh;
+}
+
+.education-section h4 {
+    letter-spacing: 1.5px;
+    color: #6b6b6b;
+}
+
+.education-1 {
+    margin: 0;
+    padding: 0;
+}
+
+.education-section p {
+    margin-top: -.5vw;
+    letter-spacing: 0.8px;
+    margin-left: 2vw;
+}
+
+
+@media (max-width:550px) {
+    body {
+        padding: 0 2vh;
+    }
+    .color-options {
+        gap: 4vh;
+    }
+    .color-options #color {
+        width: 4vh;
+        height: 4vh;
+    }
+    .resume {
+        width: 78vh;
+        min-height: 120vh;
+    }
+    .left-content {
+        padding-top: 2vh;
+        font-size: 1vw;
+    }
+    .left-content::after {
+        height: 9vh;
+    }
+    .profile-section {
+        min-height: 18vh;
+        padding: 0;
+    }
+    .profile-section .profile-image {
+        height: 21.5vh;
+        width: 21.5vh;
+    }
+    .profile-section .profile-contacts {
+        letter-spacing: .5px;
+        gap: 1.5vw;
+        padding-top: 4vh;
+        font-size: 1.7vh;
+    }
+    .summary-section {
+        font-size: 1.7vh;
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 3vh;
+    }
+    .skills-section {
+        font-size: 1.7vh;
+    }
+    .skills-section ul {
+        margin-left: -4vh;
+        margin-top: .5vh;
+    }
+    .right-content-container {
+        padding-top: 2.5vh;
+    }
+    .right-content-container h1 {
+        font-size: 4.7vh;
+    }
+    .experience-section{
+        font-size: 1.7vh;
+    }
+    .experience-section h1 {
+        font-size: 2.7vh
+    };
+}
+
+@media (max-width:450px) {
+    body {
+        padding: 0 2vh;
+    }
+    .color-options #color {
+        height: 3.5vh;
+        width: 3.5vh;
+    }
+    .resume {
+        width: 65vh;
+        min-height: 100vh;
+    }
+    .left-content {
+        padding-top: 2vh;
+    }
+    .left-content::after {
+        height: 9vh;
+    }
+    .profile-section {
+        min-height: 18vh;
+        padding: 0;
+    }
+    .profile-section .profile-image {
+        height: 18vh;
+        width: 18vh;
+    }
+    .profile-section .profile-contacts {
+        letter-spacing: .5px;
+        gap: 2vw;
+        padding-top: 4vh;
+        font-size: 2vw;
+    }
+    .summary-section {
+        font-size: 2vw;
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 3vh;
+    }
+    .skills-section {
+        font-size: 2vw;
+    }
+    .skills-section ul {
+        margin-left: -4vh;
+        margin-top: .2vh;
+    }
+    .right-content-container {
+        padding-top: 1.5vh;
+    }
+    .right-content-container h1 {
+        font-size: 3.7vh;
+    }
+    .experience-section{
+        font-size: 2vw;
+    }
+    .experience-section h1 {
+        font-size: 1.7vh
+    };
+}
+
+
+
+@media (max-width:350px) {
+    body {
+        padding: 0 2vh;
+    }
+    .wrapper {
+        height: 120vh;
+    }
+    .color-options #color {
+        height: 3vh;
+        width: 3vh;
+    }
+    .resume {
+        width: 50vh;
+        min-height: 90vh;
+    }
+    .left-content {
+        padding-top: 1.5vh;
+    }
+    .left-content::after {
+        height: 7/5vh;
+    }
+    .profile-section {
+        min-height: 18vh;
+        padding: 0;
+    }
+    .profile-section .profile-image {
+        height: 14vh;
+        width: 14vh;
+    }
+    .profile-section .profile-contacts {
+        letter-spacing: .5px;
+        gap: 3vw;
+        padding-top: 3vh;
+        font-size: 2vw;
+    }
+    .summary-section {
+        font-size: 2vw;
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 2vh;
+    }
+    .skills-section {
+        font-size: 2.5vw;
+    }
+    .skills-section ul {
+        margin-left: -4.5vh;
+        margin-top: .2vh;
+    }
+    .right-content-container {
+        padding-top: 1vh;
+    }
+    .right-content-container h1 {
+        font-size: 3vh;
+    }
+    .experience-section{
+        font-size: 2.5vw;
+    }
+    .experience-section h1 {
+        font-size: 2.5vw
+    };
+}
