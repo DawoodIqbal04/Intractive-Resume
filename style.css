@@ -364,7 +364,7 @@ body{
         width: 3.5vh;
     }
     .resume {
-        width: 65vh;
+        width: 98vw;
         min-height: 100vh;
     }
     .left-content {
@@ -378,8 +378,8 @@ body{
         padding: 0;
     }
     .profile-section .profile-image {
-        height: 18vh;
-        width: 18vh;
+        height: 28vw;
+        width: 28vw;
     }
     .profile-section .profile-contacts {
         letter-spacing: .5px;
@@ -428,7 +428,7 @@ body{
         width: 3vh;
     }
     .resume {
-        width: 50vh;
+        width: 95vw;
         min-height: 90vh;
     }
     .left-content {
@@ -442,8 +442,8 @@ body{
         padding: 0;
     }
     .profile-section .profile-image {
-        height: 14vh;
-        width: 14vh;
+        height: 27vw;
+        width: 27vw;
     }
     .profile-section .profile-contacts {
         letter-spacing: .5px;
